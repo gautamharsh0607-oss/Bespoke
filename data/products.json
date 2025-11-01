@@ -1,0 +1,25 @@
+{
+  "women": {
+    "dresses": [
+      { "id":"w1", "title":"Slip Dress", "thumbnail":"/product.jpg", "model":null, "colors":["#9b4dff","#111111"], "price":3999, "eco":"Satin (Conscious)" },
+      { "id":"w2", "title":"Co-ord Set", "thumbnail":"/product.jpg", "model":null, "colors":["#ff2d95","#ffffff"], "price":3499, "eco":"Recycled Polyester (Conscious)" }
+    ],
+    "denims": [
+      { "id":"w3", "title":"High-waist Denim", "thumbnail":"/product.jpg", "model":null, "colors":["#27476b","#1a1a1a"], "price":2499, "eco":"Organic Denim" }
+    ],
+    "blazers": [
+      { "id":"w4", "title":"Tailored Blazer", "thumbnail":"/product.jpg", "model":null, "colors":["#111111","#7f7f7f"], "price":4999, "eco":"Wool Blend" }
+    ]
+  },
+  "men": {
+    "blazers": [
+      { "id":"m1", "title":"Slim Blazer", "thumbnail":"/product.jpg", "model":null, "colors":["#111111","#27476b"], "price":5299, "eco":"Wool Blend" }
+    ],
+    "shirts": [
+      { "id":"m2", "title":"Crisp Shirt", "thumbnail":"/product.jpg", "model":null, "colors":["#ffffff","#f2f2f2"], "price":2199, "eco":"Organic Cotton" }
+    ],
+    "denims": [
+      { "id":"m3", "title":"Straight Denim", "thumbnail":"/product.jpg", "model":null, "colors":["#27476b","#1a1a1a"], "price":2599, "eco":"Organic Denim" }
+    ]
+  }
+}
