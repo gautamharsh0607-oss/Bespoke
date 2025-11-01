@@ -29,7 +29,7 @@ export default function Studio({ outfit={} }) {
           <directionalLight position={[5,5,5]} intensity={0.6} />
           <Suspense fallback={<Html center>Loading models...</Html>}>
             <group position={[0,-1.1,0]}>
-              <ModelSafe src={'/models/human_base.glb'} color={'#f3e6dd'} />
+             {/* <ModelSafe src={'/models/human_base.glb'} color={'#f3e6dd'} /> */}
               {active.map((it,idx)=> <ModelSafe key={idx} src={it.model} color={it.color||'#ffffff'} />)}
             </group>
             <Environment preset="studio" />
