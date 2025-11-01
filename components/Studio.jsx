@@ -32,7 +32,7 @@ export default function Studio({ outfit={} }) {
              {/* <ModelSafe src={'/models/human_base.glb'} color={'#f3e6dd'} /> */}
               {active.map((it,idx)=> <ModelSafe key={idx} src={it.model} color={it.color||'#ffffff'} />)}
             </group>
-            <Environment files="/studio_small_03_1k.hdr" />
+            <Environment files="/studio_small_03_1k.hdr" background />
           </Suspense>
           <OrbitControls enablePan={false} minPolarAngle={0} maxPolarAngle={Math.PI/1.9} />
         </Canvas>
