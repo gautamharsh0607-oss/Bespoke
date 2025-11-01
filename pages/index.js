@@ -3,8 +3,8 @@ export default function Home(){
   return (
     <div>
       <header className="header">
-        <div className="logo"><img src="/placeholders/logo.png" style={{width:56,height:56,borderRadius:8}} alt="logo" /> <div>BESPOKE CLOTHING</div></div>
-        <nav><Link href="/studio"><a className="button">Design your own look in 3D</a></Link></nav>
+        <div className="logo"><img src="/logo.png" style={{width:56,height:56,borderRadius:8}} alt="logo" /> <div>bespoke</div></div>
+        <nav><Link href="/studio" className="button">Design your own look in 3D</Link></nav>
       </header>
       <main className="layout">
         <div style={{textAlign:'center', marginTop:20}}>
@@ -17,7 +17,7 @@ export default function Home(){
           <div className="card"><img src="/placeholders/bottom.jpg" className="thumb" alt="bottom" /><h3>Bottom Wear</h3></div>
         </div>
       </main>
-      <footer className="footer">© BESPOKE CLOTHING — Powered by FASHION.TECH</footer>
+      <footer className="footer">© bespoke — Powered by FASHION.TECH</footer>
     </div>
   )
 }

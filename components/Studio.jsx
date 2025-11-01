@@ -2,7 +2,7 @@ import React, { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Environment, Html, useGLTF } from '@react-three/drei'
 
-{/* <ModelSafe src={'/models/human_base.glb'} color={'#f3e6dd'} /> */} {
+function ModelSafe({ src, color }){
   if (!src) return null
   try {
     const gltf = useGLTF(src, true)

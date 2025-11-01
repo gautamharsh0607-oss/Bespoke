@@ -1,31 +1,6 @@
 import Studio from '../components/Studio'
 import { useState, useEffect } from 'react'
-
-const PRODUCTS = {
-  women: {
-    dresses: [
-      { id:'w1', title:'Slip Dress', thumbnail:'/placeholders/product.jpg', model:null, colors:['#9b4dff','#111111'], price:3999, eco:'Satin (Conscious)' },
-      { id:'w2', title:'Co-ord Set', thumbnail:'/placeholders/product.jpg', model:null, colors:['#ff2d95','#ffffff'], price:3499, eco:'Recycled Polyester (Conscious)' }
-    ],
-    denims: [
-      { id:'w3', title:'High-waist Denim', thumbnail:'/placeholders/product.jpg', model:null, colors:['#27476b','#1a1a1a'], price:2499, eco:'Organic Denim' }
-    ],
-    blazers: [
-      { id:'w4', title:'Tailored Blazer', thumbnail:'/placeholders/product.jpg', model:null, colors:['#111111','#7f7f7f'], price:4999, eco:'Wool Blend' }
-    ]
-  },
-  men: {
-    blazers: [
-      { id:'m1', title:'Slim Blazer', thumbnail:'/placeholders/product.jpg', model:null, colors:['#111111','#27476b'], price:5299, eco:'Wool Blend' }
-    ],
-    shirts: [
-      { id:'m2', title:'Crisp Shirt', thumbnail:'/placeholders/product.jpg', model:null, colors:['#ffffff','#f2f2f2'], price:2199, eco:'Organic Cotton' }
-    ],
-    denims: [
-      { id:'m3', title:'Straight Denim', thumbnail:'/placeholders/product.jpg', model:null, colors:['#27476b','#1a1a1a'], price:2599, eco:'Organic Denim' }
-    ]
-  }
-}
+import PRODUCTS from '../data/products.json'
 
 const SKIN_RECS = {
   very_light:['#9b4dff','#ff7ab6','#ffffff'],
@@ -61,7 +36,7 @@ export default function StudioPage(){
   return (
     <div className="layout">
       <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:12}}>
-        <div style={{display:'flex', alignItems:'center', gap:12}}><img src="/placeholders/logo.png" style={{width:52,height:52,borderRadius:8}} alt="logo"/><div style={{fontWeight:800}}>BESPOKE CLOTHING</div></div>
+        <div style={{display:'flex', alignItems:'center', gap:12}}><img src="/logo.png" style={{width:52,height:52,borderRadius:8}} alt="logo"/><div style={{fontWeight:800}}>bespoke</div></div>
         <div style={{display:'flex', gap:8}}><button onClick={()=>{window.location.href='/'}} className="button">Home</button></div>
       </div>
 
@@ -147,7 +122,7 @@ export default function StudioPage(){
         </aside>
       </div>
 
-      <footer className="footer">© BESPOKE CLOTHING — Powered by FASHION.TECH</footer>
+      <footer className="footer">© bespoke — Powered by FASHION.TECH</footer>
     </div>
   )
 }

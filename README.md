@@ -1,4 +1,4 @@
-BESPOKE CLOTHING — Immediate Demo ZIP
+bespoke — Immediate Demo ZIP
 
 This ZIP contains a ready-to-run Next.js demo for presentation. To run locally:
 1. Install Node.js (v16+).
