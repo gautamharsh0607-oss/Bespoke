@@ -3,7 +3,7 @@ export default function Home(){
   return (
     <div>
       <header className="header">
-        <div className="logo"><img src="/logo.png" style={{width:56,height:56,borderRadius:8}} alt="logo" /> <div>bespoke</div></div>
+        <div className="logo"><img src="/logo.svg" style={{width:56,height:56,borderRadius:8}} alt="logo" /> <div>bespoke</div></div>
         <nav><Link href="/studio" className="button">Design your own look in 3D</Link></nav>
       </header>
       <main className="layout">

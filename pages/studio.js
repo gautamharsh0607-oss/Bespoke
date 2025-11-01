@@ -36,7 +36,7 @@ export default function StudioPage(){
   return (
     <div className="layout">
       <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:12}}>
-        <div style={{display:'flex', alignItems:'center', gap:12}}><img src="/logo.png" style={{width:52,height:52,borderRadius:8}} alt="logo"/><div style={{fontWeight:800}}>bespoke</div></div>
+        <div style={{display:'flex', alignItems:'center', gap:12}}><img src="/logo.svg" style={{width:52,height:52,borderRadius:8}} alt="logo"/><div style={{fontWeight:800}}>bespoke</div></div>
         <div style={{display:'flex', gap:8}}><button onClick={()=>{window.location.href='/'}} className="button">Home</button></div>
       </div>
 
