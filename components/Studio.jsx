@@ -2,7 +2,7 @@ import React, { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Environment, Html, useGLTF } from '@react-three/drei'
 
-function ModelSafe({ src, color='#ffffff' }) {
+{/* <ModelSafe src={'/models/human_base.glb'} color={'#f3e6dd'} /> */} {
   if (!src) return null
   try {
     const gltf = useGLTF(src, true)
@@ -32,7 +32,7 @@ export default function Studio({ outfit={} }) {
              {/* <ModelSafe src={'/models/human_base.glb'} color={'#f3e6dd'} /> */}
               {active.map((it,idx)=> <ModelSafe key={idx} src={it.model} color={it.color||'#ffffff'} />)}
             </group>
-            <Environment preset="studio" />
+            {/* <Environment preset="studio" /> */}
           </Suspense>
           <OrbitControls enablePan={false} minPolarAngle={0} maxPolarAngle={Math.PI/1.9} />
         </Canvas>
